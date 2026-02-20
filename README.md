@@ -1,6 +1,6 @@
 # DeepTrust — Advanced Deepfake & AI Manipulation Detector
 
-![DeepTrust Poster](https://raw.githubusercontent.com/username/project/main/assets/banner.png) <!-- Replace with actual banner if available -->
+![DeepTrust Poster](https://github.com/execute-aditya/Deep_Trust/blob/main/Screenshot%20from%202026-02-20%2017-59-47.png)
 
 [![Next.js](https://img.shields.io/badge/Frontend-Next.js%2014-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
@@ -25,26 +25,7 @@ DeepTrust solves this using a **Hybrid Cross-Validation** pipeline:
 ---
 
 ## 🛠 Project Architecture
-
-```mermaid
-graph TD
-    User([User Image Upload]) --> FE[Next.js Frontend]
-    FE --> API[FastAPI Backend]
-    
-    subgraph "Forensic Engine"
-        API --> FaceDetect[OpenCV Face Detection]
-        FaceDetect --> Crop[Quadratic Face Cropping]
-        Crop --> XNet[XceptionNet Classifier]
-        API --> EXIF[EXIF Metadata Parser]
-        API --> ELA[Error Level Analysis]
-    end
-    
-    XNet --> Logic{Hybrid Verdict Logic}
-    EXIF --> Logic
-    ELA --> Logic
-    
-    Logic --> Result[Interactive Result Dashboard]
-```
+![DeepTrust Architecture](https://github.com/execute-aditya/Deep_Trust/blob/main/Deeptrust%20Architechture.png)
 
 ---
 
@@ -108,13 +89,15 @@ Visit `http://localhost:3000` to start detecting.
 
 ## 👥 The Team
 
-We are **[Your Team Name]**, a dedicated group of developers committed to digital trust and media authenticity.
+We are **TEAM SCRATCH**, a dedicated group of developers committed to digital trust and media authenticity.
 
-| Name | Role | Contribution |
-|------|------|--------------|
-| **[Member Name 1]** | Lead Developer | Backend Architecture, AI Integration |
-| **[Member Name 2]** | Frontend Engineer | UI/UX Design, Data Visualization |
-| **[Member Name 3]** | Research Analyst | Forensic Methodology, Data Calibration |
+| Name | Role |
+|------|------|
+| **SIDDHESH GODAGE** | Lead Developer | 
+| **ADIYA DHEMBARE** | Frontend Developer |
+| **SUJAL DUBEY** | Research Analyst |
+| **AAYUSH GAIKWAD** | Documentation |
+| **SATVIK SHETTY** |  Backend Developer |
 
 ---
 
